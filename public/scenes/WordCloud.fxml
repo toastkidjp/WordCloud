@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+  fx:controller="jp.toastkid.gui.jfx.wordcloud.Controller">
+   <children>
+      <ScrollPane prefHeight="500.0" prefWidth="800.0" >
+         <FlowPane fx:id="canvas" prefHeight="480.0" prefWidth="750.0">
+            <Label text="ここに出力" />
+         </FlowPane>
+      </ScrollPane>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextArea fx:id="text" promptText="ここに文章を入力" prefHeight="100.0" prefWidth="700.0" />
+            <Button mnemonicParsing="false" text="描画" onAction="#draw" minWidth="40.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
